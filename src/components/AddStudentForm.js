@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import CONSTANTS from '../data/config';
 
 const AddStudentForm =()=>{
@@ -23,16 +23,10 @@ const AddStudentForm =()=>{
         .then(data => console.log(data))
         .catch(error => console.error('Error:', error));
         
-        // setAddFlag(true);
-        // return <Navigate to={{pathname:"/list",state:{refresh:true}}}/>;
         Navigate('/list',{state:{refresh:true}});
         <Navigate to={{pathname:"/list",state:{refresh:true}}}/>;
     }
 
-    // if(addFlag)
-    // {
-    //     return <Navigate to={{pathname:"/list",state:{refresh:true}}}/>;
-    // }
     return(
     <React.Fragment>
     <div className="panel panel-default">

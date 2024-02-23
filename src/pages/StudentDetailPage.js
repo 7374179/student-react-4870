@@ -6,6 +6,8 @@ import NotFoundPage from "../components/NotFoundPage";
 import { useState, useEffect } from "react";
 import CONSTANTS from "../data/config";
 import AddStudentForm from "../components/AddStudentForm";
+import UpdateStudent from "../components/UpdateStudentForm";
+import DeleteStudent from "../components/DeleteStudentForm";
 
 const StudentDetailPage = () => {
   // any JS code goes here
@@ -43,6 +45,8 @@ const StudentDetailPage = () => {
       </h4>
       <div style={{ width: "50%", float: "left" }}>
         <AddStudentForm />
+        {studentInfo && <UpdateStudent initialStudentInfo={studentInfo} />}
+        <DeleteStudent initialStudentInfo={studentInfo} />
       </div>
     </React.Fragment>
   );
