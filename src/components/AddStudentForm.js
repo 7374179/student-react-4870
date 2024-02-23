@@ -6,7 +6,7 @@ const AddStudentForm =()=>{
     const [firstName,setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [school, setSchool] = useState('');
-    const [addFlag,setAddFlag] = useState(false);
+    // const [addFlag,setAddFlag] = useState(false);
 
     const addStudent =()=>{
         const result = fetch(`${CONSTANTS.BASE_API_URL}students/`,{

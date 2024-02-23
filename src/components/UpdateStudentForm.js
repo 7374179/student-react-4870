@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import CONSTANTS from "../data/config";
-import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router-dom';
 
 
 const UpdateStudent = ({ initialStudentInfo }) => {
